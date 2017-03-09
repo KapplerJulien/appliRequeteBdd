@@ -153,14 +153,10 @@ void MainWindow::on_pushButtonSauvegarde_clicked()
     QTextStream out(&file);
     for(int resultLigne = 0; resultLigne < ui->listWidgetHistorique->count(); resultLigne++ ){
         QString data = ui->listWidgetHistorique->item(resultLigne)->text();
-        qDebug() << data;
-        if(!(data.endsWith(';'))){
-            out << data ;
-        } else {
-            out << data ;
-            out << "\n";
-        }
-
+        // qDebug() << "-----------------";
+        // qDebug() << data;
+        out << data ;
+        out << "\n";
     }
 }
 
@@ -194,14 +190,16 @@ void MainWindow::on_pushButtonLoad_clicked()
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return;
 
-    while (!file.atEnd()) {
-        QString line = file.readLine();
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString line = in.readLine();
         qDebug() << line;
         if(!(line.endsWith(';'))){
-            // qDebug() << "2";
-            ligne += line;
+            // qDebug() << "pas de ;";
+            ligne += line+"\n";
+            // qDebug() << ligne;
         } else {
-            // qDebug() << "1";
+            // qDebug() << "il y a ;";
             ligne += line;
             ui->listWidgetHistorique->addItem(ligne);
             ligne="";
