@@ -1,0 +1,74 @@
+.TH "DialogConnection" 3 "Wed Mar 8 2017" "ARSQL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DialogConnection \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <dialogconnection\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDialogConnection\fP (QWidget *parent=0)"
+.br
+.RI "\fIConstructeur de la classe \fBDialogConnection\fP\&. \fP"
+.ti -1c
+.RI "\fB~DialogConnection\fP ()"
+.br
+.RI "\fIDestructeur de la classe \fBDialogConnection\fP\&. \fP"
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_pushButtonConnexion_clicked\fP ()"
+.br
+.RI "\fIFonction appelé lorsque l'on clique sur le bouton connexion\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonQuitter_clicked\fP ()"
+.br
+.RI "\fIFonction appelé lorsque l'on clique sur le bouton quitter\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::DialogConnection * \fBui\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DialogConnection::DialogConnection (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+Constructeur de la classe \fBDialogConnection\fP\&. \fBParameters:\fP
+.RS 4
+\fIQWidget*\fP parent 
+.RE
+.PP
+
+.SS "DialogConnection::~DialogConnection ()"
+
+.PP
+Destructeur de la classe \fBDialogConnection\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void DialogConnection::on_pushButtonConnexion_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on clique sur le bouton connexion\&. Connexion au reste de l'application si le login et mot de passe sont corrects\&. 
+.SS "void DialogConnection::on_pushButtonQuitter_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on clique sur le bouton quitter\&. Fermeture de l'application si on appui sur le bouton quitter\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "Ui::DialogConnection* DialogConnection::ui\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARSQL from the source code\&.

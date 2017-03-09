@@ -1,0 +1,189 @@
+.TH "MainWindow" 3 "Wed Mar 8 2017" "ARSQL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mainwindow\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP (QWidget *parent=0)"
+.br
+.RI "\fIConstructeur de la classe \fBMainWindow\fP\&. \fP"
+.ti -1c
+.RI "\fB~MainWindow\fP ()"
+.br
+.RI "\fIDestructeur de la classe \fBMainWindow\fP\&. \fP"
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_comboBoxBdd_activated\fP (const QString &nomBase)"
+.br
+.RI "\fIFonction appelé lorsqu'on choisit une base de données\&. \fP"
+.ti -1c
+.RI "void \fBon_listWidgetTables_itemClicked\fP (QListWidgetItem *item)"
+.br
+.RI "\fIFonction appelé lorsqu'on clique sur un item de la liste des tables\&. \fP"
+.ti -1c
+.RI "void \fBon_textEditRequete_textChanged\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois que le texte change dans le textEdit\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonInfos_clicked\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois qu'on appui sur le bouton d'infos, le '?'\&. \fP"
+.ti -1c
+.RI "void \fBon_listWidgetHistorique_itemClicked\fP (QListWidgetItem *item)"
+.br
+.RI "\fIFonction appelé lorsque l'on clique sur un item de la liste d'historique\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonSauvegarde_clicked\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois qu'on appui sur le bouton pour sauvegarder l'historique\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonHistorise_clicked\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois qu'on appui sur le bouton pour historiser l'historique\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonLoad_clicked\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois qu'on appui sur le bouton pour charger un fichier texte contenant des requêtes historique\&. \fP"
+.ti -1c
+.RI "void \fBon_pushButtonExporter_clicked\fP ()"
+.br
+.RI "\fIFonction appelé à chaque fois qu'on appui sur le bouton pour exporter le résultat de la requête au format csv\&. \fP"
+.ti -1c
+.RI "void \fBon_actionQuit_activated\fP ()"
+.br
+.RI "\fIFonction appelé lorsque l'on appui sur le menu 'fichier' puis 'quitter'\&. \fP"
+.ti -1c
+.RI "void \fBon_actionLoad_file_activated\fP ()"
+.br
+.RI "\fIFonction appelé lorsque l'on appui sur le menu 'fichier' et 'charger fichier'\&. \fP"
+.ti -1c
+.RI "void \fBon_actionAbout_activated\fP ()"
+.br
+.RI "\fIFonction appelé lorsque l'on appui sur le menu '?' et 'about'\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::MainWindow * \fBui\fP"
+.br
+.ti -1c
+.RI "QString \fBerreurSql\fP"
+.br
+.RI "\fIL'erreur sql récupéré, tant que le résultat est faux, en QString\&. \fP"
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MainWindow::MainWindow (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+Constructeur de la classe \fBMainWindow\fP\&. \fBParameters:\fP
+.RS 4
+\fIQWidget*\fP parent 
+.RE
+.PP
+
+.SS "MainWindow::~MainWindow ()"
+
+.PP
+Destructeur de la classe \fBMainWindow\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void MainWindow::on_actionAbout_activated ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on appui sur le menu '?' et 'about'\&. Ouvrir le about de l'application\&. 
+.SS "void MainWindow::on_actionLoad_file_activated ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on appui sur le menu 'fichier' et 'charger fichier'\&. Charger un fichier\&. 
+.SS "void MainWindow::on_actionQuit_activated ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on appui sur le menu 'fichier' puis 'quitter'\&. Fermer l'application\&. 
+.SS "void MainWindow::on_comboBoxBdd_activated (const QString &nomBase)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsqu'on choisit une base de données\&. A chaque modification de la base de données\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIQString\fP nomBase : nom de la base de données choisis
+.br
+\fInomBase\fP 
+.RE
+.PP
+
+.SS "void MainWindow::on_listWidgetHistorique_itemClicked (QListWidgetItem *item)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsque l'on clique sur un item de la liste d'historique\&. Lancement de requête à partir de l'historique Lorsqu'on appui sur une requête dans l'historique elle est affiché dans le textEdit et elle se lance directement\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIQListWidgetItem*\fP item : L'item de la liste chosis
+.br
+\fIitem\fP 
+.RE
+.PP
+
+.SS "void MainWindow::on_listWidgetTables_itemClicked (QListWidgetItem *item)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé lorsqu'on clique sur un item de la liste des tables\&. Choisir une table et affichage des champs Lorsque l'on clique, la table que l'on choisis est utilisée pour récupérer les champs de la table choisis\&. Puis les champs sont mis dans une liste\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIQListWidgetItem*\fP item : l'item de la liste choisis
+.br
+\fIitem\fP 
+.RE
+.PP
+
+.SS "void MainWindow::on_pushButtonExporter_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois qu'on appui sur le bouton pour exporter le résultat de la requête au format csv\&. Exporter le résultat Permet d'exporter le résultat de la requête au fomat csv\&. 
+.SS "void MainWindow::on_pushButtonHistorise_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois qu'on appui sur le bouton pour historiser l'historique\&. Ajout dans l'historique Si la requête est valide, elle peut être ajouté dans la liste d'hisorique lorsqu'on appui sur le bouton pour historiser\&. 
+.SS "void MainWindow::on_pushButtonInfos_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois qu'on appui sur le bouton d'infos, le '?'\&. Le bouton d'information Affiche l'erreur sql correspondant à la requête écrite, l'erreur sql ne change que si on rappui sur le bouton\&. 
+.SS "void MainWindow::on_pushButtonLoad_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois qu'on appui sur le bouton pour charger un fichier texte contenant des requêtes historique\&. Charger un fichier Permet de charger un fichier (\&.sql), pour afficher les requêtes de ce fichier dans la liste d'historique\&. 
+.SS "void MainWindow::on_pushButtonSauvegarde_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois qu'on appui sur le bouton pour sauvegarder l'historique\&. Sauvegarde de l'historique Sauvegarde dans un fichier (\&.sql) toutes les requêtes présentent dans l'historique\&. 
+.SS "void MainWindow::on_textEditRequete_textChanged ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Fonction appelé à chaque fois que le texte change dans le textEdit\&. A chaque modification du texte de la requête A chaque modification, la requête est tester dans la base de données, si elle fonctionne on affiche le résultat dans un tableau et le bouton '?' est en vert, sinon on ne fait rien et le bouton '?' est en rouge\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "QString MainWindow::erreurSql\fC [private]\fP"
+
+.PP
+L'erreur sql récupéré, tant que le résultat est faux, en QString\&. 
+.SS "Ui::MainWindow* MainWindow::ui\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARSQL from the source code\&.

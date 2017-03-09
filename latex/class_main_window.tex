@@ -1,0 +1,259 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_main_window}{Main\-Window}. \end{DoxyCompactList}\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_main_window}{Main\-Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_ac78407ed9c898fcb27bc2db4a67a6e0a}{on\-\_\-combo\-Box\-Bdd\-\_\-activated} (const Q\-String \&nom\-Base)
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsqu'on choisit une base de données. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad68380800ff39679a8e597d07cb27ee4}{on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked} (Q\-List\-Widget\-Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsqu'on clique sur un item de la liste des tables. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a122b5a2422b6327ae7138e420ba268e7}{on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois que le texte change dans le text\-Edit. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_af1c558adb235fcf891702302b977f98d}{on\-\_\-push\-Button\-Infos\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois qu'on appui sur le bouton d'infos, le \char`\"{}?\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ae0c936a373039e3683d5cf838511842d}{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked} (Q\-List\-Widget\-Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsque l'on clique sur un item de la liste d'historique. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a9ccbc3dd9764c0ada1891edc25eaac77}{on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois qu'on appui sur le bouton pour sauvegarder l'historique. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a069692785eba48404e4b4a4f941723b8}{on\-\_\-push\-Button\-Historise\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois qu'on appui sur le bouton pour historiser l'historique. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a56eeb1c63bd7618baf7415512fdff95a}{on\-\_\-push\-Button\-Load\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois qu'on appui sur le bouton pour charger un fichier texte contenant des requêtes historique. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a79371134c204c9a3b659189024dee98f}{on\-\_\-push\-Button\-Exporter\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé à chaque fois qu'on appui sur le bouton pour exporter le résultat de la requête au format csv. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a69eaf67ee180f3eb08d857036554149c}{on\-\_\-action\-Quit\-\_\-activated} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsque l'on appui sur le menu \char`\"{}fichier\char`\"{} puis \char`\"{}quitter\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad2ffc1d131818f51d02ceada725837fb}{on\-\_\-action\-Load\-\_\-file\-\_\-activated} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsque l'on appui sur le menu \char`\"{}fichier\char`\"{} et \char`\"{}charger fichier\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a916767c87c035594f3952e107c527a72}{on\-\_\-action\-About\-\_\-activated} ()
+\begin{DoxyCompactList}\small\item\em Fonction appelé lorsque l'on appui sur le menu \char`\"{}?\char`\"{} et \char`\"{}about\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\-::\-Main\-Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+Q\-String \hyperlink{class_main_window_a191cfb4e6409b23d8302bf840c88c364}{erreur\-Sql}
+\begin{DoxyCompactList}\small\item\em L'erreur sql récupéré, tant que le résultat est faux, en Q\-String. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+Constructeur de la classe \hyperlink{class_main_window}{Main\-Window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\-Widget$\ast$} & parent \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\index{Main\-Window@{Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::$\sim$\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+Destructeur de la classe \hyperlink{class_main_window}{Main\-Window}. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a916767c87c035594f3952e107c527a72}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-About\-\_\-activated@{on\-\_\-action\-About\-\_\-activated}}
+\index{on\-\_\-action\-About\-\_\-activated@{on\-\_\-action\-About\-\_\-activated}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-About\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-About\-\_\-activated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a916767c87c035594f3952e107c527a72}
+
+
+Fonction appelé lorsque l'on appui sur le menu \char`\"{}?\char`\"{} et \char`\"{}about\char`\"{}. 
+
+Ouvrir le about de l'application. \hypertarget{class_main_window_ad2ffc1d131818f51d02ceada725837fb}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-Load\-\_\-file\-\_\-activated@{on\-\_\-action\-Load\-\_\-file\-\_\-activated}}
+\index{on\-\_\-action\-Load\-\_\-file\-\_\-activated@{on\-\_\-action\-Load\-\_\-file\-\_\-activated}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-Load\-\_\-file\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-Load\-\_\-file\-\_\-activated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ad2ffc1d131818f51d02ceada725837fb}
+
+
+Fonction appelé lorsque l'on appui sur le menu \char`\"{}fichier\char`\"{} et \char`\"{}charger fichier\char`\"{}. 
+
+Charger un fichier. \hypertarget{class_main_window_a69eaf67ee180f3eb08d857036554149c}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-Quit\-\_\-activated@{on\-\_\-action\-Quit\-\_\-activated}}
+\index{on\-\_\-action\-Quit\-\_\-activated@{on\-\_\-action\-Quit\-\_\-activated}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-Quit\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-Quit\-\_\-activated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a69eaf67ee180f3eb08d857036554149c}
+
+
+Fonction appelé lorsque l'on appui sur le menu \char`\"{}fichier\char`\"{} puis \char`\"{}quitter\char`\"{}. 
+
+Fermer l'application. \hypertarget{class_main_window_ac78407ed9c898fcb27bc2db4a67a6e0a}{\index{Main\-Window@{Main\-Window}!on\-\_\-combo\-Box\-Bdd\-\_\-activated@{on\-\_\-combo\-Box\-Bdd\-\_\-activated}}
+\index{on\-\_\-combo\-Box\-Bdd\-\_\-activated@{on\-\_\-combo\-Box\-Bdd\-\_\-activated}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-combo\-Box\-Bdd\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-combo\-Box\-Bdd\-\_\-activated (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{nom\-Base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ac78407ed9c898fcb27bc2db4a67a6e0a}
+
+
+Fonction appelé lorsqu'on choisit une base de données. 
+
+A chaque modification de la base de données.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\-String} & nom\-Base \-: nom de la base de données choisis\\
+\hline
+{\em nom\-Base} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ae0c936a373039e3683d5cf838511842d}{\index{Main\-Window@{Main\-Window}!on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}}
+\index{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked (
+\begin{DoxyParamCaption}
+\item[{Q\-List\-Widget\-Item $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ae0c936a373039e3683d5cf838511842d}
+
+
+Fonction appelé lorsque l'on clique sur un item de la liste d'historique. 
+
+Lancement de requête à partir de l'historique Lorsqu'on appui sur une requête dans l'historique elle est affiché dans le text\-Edit et elle se lance directement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\-List\-Widget\-Item$\ast$} & item \-: L'item de la liste chosis\\
+\hline
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ad68380800ff39679a8e597d07cb27ee4}{\index{Main\-Window@{Main\-Window}!on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked}}
+\index{on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-list\-Widget\-Tables\-\_\-item\-Clicked (
+\begin{DoxyParamCaption}
+\item[{Q\-List\-Widget\-Item $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ad68380800ff39679a8e597d07cb27ee4}
+
+
+Fonction appelé lorsqu'on clique sur un item de la liste des tables. 
+
+Choisir une table et affichage des champs Lorsque l'on clique, la table que l'on choisis est utilisée pour récupérer les champs de la table choisis. Puis les champs sont mis dans une liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\-List\-Widget\-Item$\ast$} & item \-: l'item de la liste choisis\\
+\hline
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_a79371134c204c9a3b659189024dee98f}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Exporter\-\_\-clicked@{on\-\_\-push\-Button\-Exporter\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Exporter\-\_\-clicked@{on\-\_\-push\-Button\-Exporter\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Exporter\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Exporter\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a79371134c204c9a3b659189024dee98f}
+
+
+Fonction appelé à chaque fois qu'on appui sur le bouton pour exporter le résultat de la requête au format csv. 
+
+Exporter le résultat Permet d'exporter le résultat de la requête au fomat csv. \hypertarget{class_main_window_a069692785eba48404e4b4a4f941723b8}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Historise\-\_\-clicked@{on\-\_\-push\-Button\-Historise\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Historise\-\_\-clicked@{on\-\_\-push\-Button\-Historise\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Historise\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Historise\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a069692785eba48404e4b4a4f941723b8}
+
+
+Fonction appelé à chaque fois qu'on appui sur le bouton pour historiser l'historique. 
+
+Ajout dans l'historique Si la requête est valide, elle peut être ajouté dans la liste d'hisorique lorsqu'on appui sur le bouton pour historiser. \hypertarget{class_main_window_af1c558adb235fcf891702302b977f98d}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Infos\-\_\-clicked@{on\-\_\-push\-Button\-Infos\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Infos\-\_\-clicked@{on\-\_\-push\-Button\-Infos\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Infos\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Infos\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_af1c558adb235fcf891702302b977f98d}
+
+
+Fonction appelé à chaque fois qu'on appui sur le bouton d'infos, le \char`\"{}?\char`\"{}. 
+
+Le bouton d'information Affiche l'erreur sql correspondant à la requête écrite, l'erreur sql ne change que si on rappui sur le bouton. \hypertarget{class_main_window_a56eeb1c63bd7618baf7415512fdff95a}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Load\-\_\-clicked@{on\-\_\-push\-Button\-Load\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Load\-\_\-clicked@{on\-\_\-push\-Button\-Load\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Load\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Load\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a56eeb1c63bd7618baf7415512fdff95a}
+
+
+Fonction appelé à chaque fois qu'on appui sur le bouton pour charger un fichier texte contenant des requêtes historique. 
+
+Charger un fichier Permet de charger un fichier (.sql), pour afficher les requêtes de ce fichier dans la liste d'historique. \hypertarget{class_main_window_a9ccbc3dd9764c0ada1891edc25eaac77}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked@{on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked@{on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Sauvegarde\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a9ccbc3dd9764c0ada1891edc25eaac77}
+
+
+Fonction appelé à chaque fois qu'on appui sur le bouton pour sauvegarder l'historique. 
+
+Sauvegarde de l'historique Sauvegarde dans un fichier (.sql) toutes les requêtes présentent dans l'historique. \hypertarget{class_main_window_a122b5a2422b6327ae7138e420ba268e7}{\index{Main\-Window@{Main\-Window}!on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed@{on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed}}
+\index{on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed@{on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-text\-Edit\-Requete\-\_\-text\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a122b5a2422b6327ae7138e420ba268e7}
+
+
+Fonction appelé à chaque fois que le texte change dans le text\-Edit. 
+
+A chaque modification du texte de la requête A chaque modification, la requête est tester dans la base de données, si elle fonctionne on affiche le résultat dans un tableau et le bouton \char`\"{}?\char`\"{} est en vert, sinon on ne fait rien et le bouton \char`\"{}?\char`\"{} est en rouge. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_window_a191cfb4e6409b23d8302bf840c88c364}{\index{Main\-Window@{Main\-Window}!erreur\-Sql@{erreur\-Sql}}
+\index{erreur\-Sql@{erreur\-Sql}!MainWindow@{Main\-Window}}
+\subsubsection[{erreur\-Sql}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Main\-Window\-::erreur\-Sql\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a191cfb4e6409b23d8302bf840c88c364}
+
+
+L'erreur sql récupéré, tant que le résultat est faux, en Q\-String. 
+
+\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}{\index{Main\-Window@{Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Main\-Window$\ast$ Main\-Window\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a35466a70ed47252a0191168126a352a5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}
